@@ -34,7 +34,7 @@ h1 > span {
 .our-message {
     color: var(--desaturated-red);
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 25px;
 }
 
@@ -69,9 +69,10 @@ input::placeholder {
 }
 
 button {
-    border-radius: 50px;
-    background: var(--desaturated-red);
-    padding: 15px 25px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, var(--grad-color-3), var(--grad-color-4));
+    box-shadow: 0px 1px 3px var(--dark-grayish-red);
+    padding: 15px 25px 15px 30px;
 }
 
 
@@ -94,5 +95,6 @@ header > img {
     font-size: 11px; text-align: center; 
 }
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: var(--desaturated-red);
+    text-decoration: none;
 }
