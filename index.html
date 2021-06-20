@@ -30,10 +30,11 @@
           Add your email below to stay up-to-date with announcement and our launch deals.
         </p>
 
-        <form>
+        <form method="POST" enctype="application/x-www-form-urlencoded">
           <div class="input-group">
             <input type="email" name="email" placeholder="Email address" />
-            <button type="submit">
+            <span id="error" class="error-icon hidden"><img src="img/icon-error.svg" alt="icon error"></span>
+            <button type="submit" formnovalidate>
               <img src="img/icon-arrow.svg" alt="submit btn">
             </button>
           </div>
@@ -48,5 +49,7 @@
       Coded by <a href="https://github.com/hhamza1">Hamza HMITOU</a>.
     </p>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
