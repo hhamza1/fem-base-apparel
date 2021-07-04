@@ -17,33 +17,32 @@
   <header>
     <img src="img/logo.svg" alt="Base Apparel">
   </header>
-
-  <main>
-      <div class="hero">
-        <img srcset="img/hero-mobile.jpg 375w"
-             sizes="(max-width: 600px) 375px"
-             alt="Hero Image">
-      </div>
-
-      <div class="form-container">
-        <h1 class="header"><span>we're</span> coming soon</h1>
-        <p class="our-message">
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcement and our launch deals.
-        </p>
-
-        <form method="POST" enctype="application/x-www-form-urlencoded">
-          <div class="input-group">
-            <input type="email" name="email" placeholder="Email address" />
-            <span id="error" class="error-icon hidden"><img src="img/icon-error.svg" alt="icon error"></span>
-            <button type="submit" formnovalidate>
-              <img src="img/icon-arrow.svg" alt="submit btn">
-            </button>
-          </div>
-        </form>
-      </div>
-      
-  </main>
+  <div class="hero">
+    <picture>
+        <source media="(min-width: 376px)" srcset="img/hero-desktop.jpg">
+        <image src="img/hero-mobile.jpg" alt="Hero Image" style="width: auto;">
+    </picture>
+  </div>
+  <div class="desktop-container">
+    <div class="form-container">
+      <h1 class="header"><span>we're</span> coming soon</h1>
+      <p class="our-message">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcement and our launch deals.
+      </p>
+  
+      <form method="POST" enctype="application/x-www-form-urlencoded">
+        <div class="input-group">
+          <input type="email" name="email" placeholder="Email address" />
+          <span id="error" class="error-icon hidden"><img src="img/icon-error.svg" alt="icon error"></span>
+          <button type="submit" formnovalidate>
+            <img src="img/icon-arrow.svg" alt="submit btn">
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
   
   <footer>
     <p class="attribution">
