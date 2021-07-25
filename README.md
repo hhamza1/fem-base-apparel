@@ -19,6 +19,6 @@ The users should:
     - The input field is empty
     - The email address is not formatted correctly
 
-ONLY HTML & CSS
+ONLY HTML, CSS and Vanilla JS 
 
 **Have fun building!** 🚀
