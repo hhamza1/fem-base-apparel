@@ -9,6 +9,8 @@
 }
 
 
+
+
 body {
     margin: 0 auto;
     padding: 0;
@@ -144,6 +146,20 @@ header > img {
 
 
 @media screen and (min-width: 1024px) {
+    body::before {
+        background-image:url(../img/bg-pattern-desktop.svg);
+        content: '';
+        background-repeat: no-repeat;
+        background-size: stretch;
+        background-position: left top;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
     body {
         display: grid;
         max-height: 100vh;
@@ -153,7 +169,6 @@ header > img {
         justify-content: center;
         overflow: hidden;
     }
-
        header{
         grid-column: 1 / 4;
         grid-row: 1 / 2;
